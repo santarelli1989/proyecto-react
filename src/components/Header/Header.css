@@ -1,0 +1,17 @@
+.HeaderContainner {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 70px;
+}
+.HeaderTitle {
+  display: flex;
+}
+
+.HeaderTitle h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+}
+.HeaderBar a {
+  padding-right: 15px;
+  
+}
