@@ -2,16 +2,41 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 70px;
+  align-items: center;
 }
+
 .HeaderTitle {
   display: flex;
 }
+.HeaderTitle > img {
+  width: 40px;
+  height: 30px;
+  align-items: center;
+}
 
-.HeaderTitle h1 {
+.HeaderTitle > h1 {
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
 }
-.HeaderBar a {
-  padding-right: 15px;
-  
+.HeaderBar {
+  display: flex;
+  gap: 15px;
+}
+.HeaderBar > a {
+  text-decoration: none;
+  color: black;
+}
+.HeaderBar > a:hover {
+  color: red;
+}
+.HeaderIcons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.HeaderIcons > a {
+  color: rgb(28, 28, 28);
+}
+.HeaderIcons > a:hover {
+  color: rgb(253, 33, 33);
 }

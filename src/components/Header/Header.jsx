@@ -1,29 +1,31 @@
 import "./Header.css";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import SearchIcon from "@mui/icons-material/Search";
+import logo_pagina from "../../asessts/img/logo_pagina.png";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="HeaderContainner">
       {/* titulo e imagen de la pagina*/}
       <div className="HeaderTitle">
-        <img src="" alt="" />
+        <img src={logo_pagina} alt="" />
         <h1>Titulo pagina</h1>
       </div>
       <nav className="HeaderBar">
         {/*menu navegable */}
-        <a href="">Inicio</a>
-        <a href="">Productos</a>
-        <a href="">Contactos</a>
+        <Link to="/Inicio">Inicio</Link>
+        <Link to="/Productos">Productos</Link>
+        <Link to="/Contacto">Contactos</Link>
       </nav>
       {/* iconoco del carrito de compras y lupa para buscar producto*/}
       <div className="HeaderIcons">
-        <a href="">
+        <Link to="">
           <SearchIcon />
-        </a>
-        <a href="">
+        </Link>
+        <Link to="/Carrito">
           <ShoppingCartIcon />
-        </a>
+        </Link>
       </div>
     </header>
   );
