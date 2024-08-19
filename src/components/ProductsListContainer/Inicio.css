@@ -1,0 +1,42 @@
+.Productos {
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  text-align: center;
+  font-size: 50px;
+  color: brown;
+}
+.PerroGato {
+  display: flex;
+  justify-content: center;
+}
+.PerroGato img {
+  display: flex;
+  width: 600px;
+  height: 500px;
+  padding-top: 20px;
+}
+.Productos2 {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.Productos2 img {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  padding: 30px;
+  justify-content: center;
+}
+.Productos2 h3 {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 25px;
+  color: rgba(21, 0, 255, 0.775);
+}
+.Productos2 a {
+  text-decoration: none;
+  text-align: center;
+}

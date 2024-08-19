@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .ProductCard {
   width: calc(25% - 75px / 4);
   background-color: bisque;
@@ -20,11 +21,42 @@
   padding-left: 15px;
 }
 .ProductCard > span {
+=======
+.ProductsCard {
+  width: calc(25% - 75px / 3);
+  background-color: black;
+  position: relative;
+}
+.ProductsCard:hover .ProductsCardHover {
+  opacity: 1;
+}
+.ProductsCard > img {
+  width: 100%;
+  height: 50%;
+}
+.ProductsCard > h3 {
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 15px;
+  color: white;
+}
+.ProductsCard > p {
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 15px;
+  color: beige;
+}
+.ProductsCard > span {
+>>>>>>> main
   font-size: 20px;
   font-weight: 600;
   padding-left: 15px;
 }
+<<<<<<< HEAD
 .ProductCardHover {
+=======
+.ProductsCardHover {
+>>>>>>> main
   position: absolute;
   top: 0;
   left: 0;
@@ -36,7 +68,11 @@
   opacity: 0;
   transition: 0.4;
 }
+<<<<<<< HEAD
 .ProductCardHoverBackground {
+=======
+.ProductsCardHoverBackground {
+>>>>>>> main
   position: absolute;
   width: 100%;
   height: 100%;
@@ -44,7 +80,11 @@
   opacity: 0.7;
   z-index: 10;
 }
+<<<<<<< HEAD
 .ProductCardHover > a {
+=======
+.ProductsCardHover > a {
+>>>>>>> main
   font-size: 600;
   color: rgb(253, 54, 54);
   background: rgb(142, 141, 141);
@@ -54,3 +94,20 @@
   display: flex;
   justify-content: center;
 }
+<<<<<<< HEAD
+=======
+.VerDetalle {
+  display: flex;
+
+  padding-top: 10px;
+  justify-content: center;
+  text-decoration: none;
+  color: blue;
+  font-size: 20px;
+}
+.VerDetalle:hover {
+  background-color: white;
+  border-radius: 15px;
+}
+
+>>>>>>> main
