@@ -1,12 +1,13 @@
-<<<<<<< HEAD
+
 import "./ProductoDetalle.css";
 
 function ProductoDetalle({ products }) {
   return (
     <div>
+    
       <h1>{products.title}</h1>
       <p>{products.price}</p>
-=======
+
 import { useState } from "react";
 import "./ProductoDetalle.css";
 import { useCartContext } from "../../context/CartContext";
@@ -44,9 +45,10 @@ function ProductoDetalle({ products }) {
           </div>
         </div>
       </div>
->>>>>>> main
     </div>
+   </div>
   );
 }
+
 
 export default ProductoDetalle;
