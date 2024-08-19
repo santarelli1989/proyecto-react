@@ -1,5 +1,8 @@
-
 import "./ProductoDetalle.css";
+import { useState } from "react";
+import "./ProductoDetalle.css";
+import { useCartContext } from "../../context/CartContext";
+
 
 function ProductoDetalle({ products }) {
   return (
@@ -7,11 +10,7 @@ function ProductoDetalle({ products }) {
     
       <h1>{products.title}</h1>
       <p>{products.price}</p>
-
-import { useState } from "react";
-import "./ProductoDetalle.css";
-import { useCartContext } from "../../context/CartContext";
-
+      
 function ProductoDetalle({ products }) {
   const { AgregarProducto } = useCartContext();
   const [count, setCount] = useState(1);
@@ -46,7 +45,7 @@ function ProductoDetalle({ products }) {
         </div>
       </div>
     </div>
-   </div>
+    </div>
   );
 }
 
