@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { useProductsContext } from "../../context/ProductsContext";
 import ProductoDetalle from "../ProductoDetalle/ProductoDetalle";
 
-
 function ProductDetailContainer() {
   const { getProductById } = useProductsContext();
   const [product, setProduct] = useState(null);
@@ -19,12 +18,12 @@ function ProductDetailContainer() {
   return (
     <div className="ProductDetailContainer">
       {!product ? (
-        <div class="loader">
-          <span class="loader-text">loading</span>
-          <span class="load"></span>
+        <div className="loader">
+          <span className="loader-text">loading</span>
+          <span className="load"></span>
         </div>
       ) : (
-        <ProductoDetalle product={product} />
+        <ProductoDetalle products={product} />
       )}
     </div>
   );

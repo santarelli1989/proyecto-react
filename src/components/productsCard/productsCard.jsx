@@ -8,10 +8,7 @@ function productsCard({ products }) {
       <h3>{products.title}</h3>
       <p>{products.category}</p>
       <span>${products.price}</span>
-      <div className="ProductCardHover">
-        <div className="ProductCardHoverBackground"></div>
-        <Link to={"/product/${product.id}"}>Ver Detalle</Link>
-      </div>
+      <Link to={`/product/${products.id}`}>ver detalle</Link>
     </div>
   );
 }

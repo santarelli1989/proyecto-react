@@ -1,24 +1,22 @@
 import "./ProductoDetalle.css";
 import { useState } from "react";
-import "./ProductoDetalle.css";
 import { useCartContext } from "../../context/CartContext";
-
+import { Link } from "react-router-dom";
 
 function ProductoDetalle({ products }) {
-  return (
-    <div>
-    
-      <h1>{products.title}</h1>
-      <p>{products.price}</p>
-      
-function Carrito ({ products }) {
   const { AgregarProducto } = useCartContext();
   const [count, setCount] = useState(1);
+  const [productAdd, setProductAdd] = useState(false);
+
   const addcount = () => {
     setCount(count + 1);
   };
   const removeCount = () => {
     count > 1 && setCount(count - 1);
+  };
+  const enviarProducto = () => {
+    AgregarProducto(products, count);
+    setProductAdd(true);
   };
   return (
     <div className="ProductoDetalle">
@@ -30,24 +28,25 @@ function Carrito ({ products }) {
           <span>${products.price}</span>
         </div>
         <div className="Contador">
-          <div className="BotonesCotador">
-            <button onClick={removeCount}>-</button>
-            <span>{count}</span>
-            <button onClick={addcount}>+</button>
+          {productAdd ? (
+            <Link className="agregarCarrito" to="/carrito">Carrito</Link>
+          ) : (
+            <>
+              <div className="BotonesCotador">
+                <button onClick={removeCount}>-</button>
+                <span>{count}</span>
+                <button onClick={addcount}>+</button>
 
-            <button
-              className="botonAgregar"
-              onClick={() => AgregarProducto(products, count)}
-            >
-              agregar al carrito
-            </button>
-          </div>
+                <button className="botonAgregar" onClick={enviarProducto}>
+                  agregar al carrito
+                </button>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </div>
-    </div>
   );
 }
-
 
 export default ProductoDetalle;

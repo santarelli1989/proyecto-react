@@ -10,11 +10,7 @@ function Header() {
       {/* titulo e imagen de la pagina*/}
       <div className="HeaderTitle">
         <img src={logo_pagina} alt="" />
-<<<<<<< HEAD
-        <h1>Titulo pagina</h1>
-=======
-        <h1>como perros y gatos</h1>
->>>>>>> main
+        <h1>petshop</h1>
       </div>
       <nav className="HeaderBar">
         {/*menu navegable */}

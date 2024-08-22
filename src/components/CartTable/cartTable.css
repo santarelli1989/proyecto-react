@@ -1,0 +1,13 @@
+.carTable {
+  border-spacing: 0;
+}
+.carTable > thead {
+  background-color: burlywood;
+}
+.carTable > thead > tr > td {
+  padding: 20px 50px 20px 0;
+}
+.item > td {
+  padding-top: 50px;
+  padding-right: 40px;
+}

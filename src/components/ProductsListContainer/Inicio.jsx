@@ -1,9 +1,4 @@
 import "./Inicio.css";
-<<<<<<< HEAD
-
-function Inicio() {
-  return <h1>Estos son los productos que tenemos para ofrecer</h1>;
-=======
 import perro_y_gato from "../../asessts/img/perro_y_gato.png";
 import perro_con_collar from "../../asessts/img/perro_con_collar.png";
 import perro_y_juguete from "../../asessts/img/perro_y_juguete.png";
@@ -39,7 +34,6 @@ function Inicio() {
       </div>
     </div>
   );
->>>>>>> main
 }
 
 export default Inicio;

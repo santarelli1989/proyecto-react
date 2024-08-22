@@ -1,7 +1,12 @@
+import { useCartContext } from "../../context/CartContext";
 import "./Cart.css";
 
 function Cart() {
-  return <h1>Aca Ves tus Productos seleccionados</h1>;
+  const {Cart} = useCartContext();
+
+  return <div>
+    {Cart.map((item)=> <h1 key={item.products.title}>{item.products.title}</h1>) }
+  </div>
 }
 
 export default Cart;
