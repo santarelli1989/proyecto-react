@@ -16,7 +16,6 @@ function Header() {
         {/*menu navegable */}
         <Link to="/Inicio">Inicio</Link>
         <Link to="/Productos">Productos</Link>
-        <Link to="/Contacto">Contactos</Link>
       </nav>
       {/* iconoco del carrito de compras y lupa para buscar producto*/}
       <div className="HeaderIcons">
