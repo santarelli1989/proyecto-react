@@ -6,8 +6,43 @@
 }
 .carTable > thead > tr > td {
   padding: 20px 50px 20px 0;
+  font-weight: 500;
 }
 .item > td {
   padding-top: 50px;
   padding-right: 40px;
+}
+
+.itemImage {
+  width: 130px;
+}
+.total {
+  color: black !important;
+}
+.boton {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  color: black;
+  padding: 10px;
+  background-color: brown;
+  cursor: pointer;
+  transition: 0.3;
+}
+.boton:hover {
+  background-color: blue;
+}
+
+.borrarTodo{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+    background-color: brown;
+    cursor: pointer;
+    transition: 0.3;
+}
+.borrarTodo:hover{
+    background-color: blue;
 }

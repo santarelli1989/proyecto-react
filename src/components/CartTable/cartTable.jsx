@@ -2,7 +2,8 @@ import { useCartContext } from "../../context/CartContext";
 import "./cartTable.css";
 
 function cartTable() {
-  const { cart } = useCartContext();
+  const { cart, cambiarCantidad, eliminarProducto, eliminarCarrito } =
+    useCartContext();
   return (
     <table className="carTable">
       <thead>
@@ -19,18 +20,53 @@ function cartTable() {
         {cart.map((item) => (
           <tr className="item">
             <td>
-              <img src={item.products.image} alt={item.products.title} />
+              <img
+                className="itemImage"
+                src={item.products.image}
+                alt={item.products.title}
+              />
             </td>
             <td>{item.products.title}</td>
             <td>${item.products.price}</td>
-            <td>{item.quantity}</td>
-            <td>{item.quantity * item.products.price}</td>
             <td>
-              <button>eliminar</button>
+              <div className="BotonesCotador">
+                <button
+                  onClick={() =>
+                    item.quantity > 1 &&
+                    cambiarCantidad(item.product.id, item.quantity - 1)
+                  }
+                >
+                  -
+                </button>
+                <span>{item.quantity}</span>
+                <button
+                  onClick={() =>
+                    cambiarCantidad(item.product.id, item.quantity + 1)
+                  }
+                >
+                  +
+                </button>
+              </div>
+            </td>
+            <td className="total">{item.quantity * item.products.price}</td>
+            <td>
+              <button
+                onClick={() => eliminarProducto(item.product.id)}
+                className="boton"
+              >
+                eliminar
+              </button>
             </td>
           </tr>
         ))}
       </tbody>
+      <tfoot>
+        <tr>
+          <th colSpan="6">
+            <button className="borrarTodo" onClick={eliminarCarrito}>Eliminar todo</button>
+          </th>
+        </tr>
+      </tfoot>
     </table>
   );
 }
