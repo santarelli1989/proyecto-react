@@ -30,7 +30,7 @@
   transition: 0.3;
 }
 .boton:hover {
-  background-color: blue;
+  background-color: red;
 }
 
 .borrarTodo{
